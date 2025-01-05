@@ -1,6 +1,7 @@
 /* General body styling */
 body {
     font-family: 'Roboto', sans-serif;
+    /* Using Google Font Roboto */
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
@@ -14,6 +15,8 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
+    font-family: 'Lora', serif;
+    /* Using Google Font Lora for headings */
 }
 
 header h1 {
