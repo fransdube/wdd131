@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 768px)">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>My Favorite Place</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <picture>
+                <source srcset="images/section2.webp" media="(max-width: 500px)">
+                <source srcset="images/section1.webp" media="(max-width: 1000px)">
+                <img src="images/section2.webp" alt="Hero Image">
+            </picture>
+        </section>
+        <section id="weather">
+            <h2>Weather</h2>
+            <div id="weather-icon">⛅</div>
+            <p>Temperature: <span id="temp">10</span>°C</p>
+            <p>Wind Speed: <span id="wind-speed">15</span> km/h</p>
+            <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="current-year"></span> | MF Dube</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>
