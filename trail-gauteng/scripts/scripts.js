@@ -1,14 +1,3 @@
-
-// Hamburger Menu Toggle
-const hamburger = document.getElementById("hamburger");
-const navMenu = document.getElementById("nav-menu");
-
-if (hamburger && navMenu) {
-    hamburger.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
-    });
-}
-
 // Trail Data
 const trails = [
     {
@@ -34,11 +23,19 @@ const trails = [
     }
 ];
 
+// Store Trail Data in localStorage (if not already stored)
+if (!localStorage.getItem("trails")) {
+    localStorage.setItem("trails", JSON.stringify(trails));
+}
+
+// Retrieve Trail Data from localStorage
+const storedTrails = JSON.parse(localStorage.getItem("trails"));
+
 // Dynamically Generate Trail Cards
 const trailContainer = document.getElementById("trail-container");
 
 if (trailContainer) {
-    trails.forEach(trail => {
+    storedTrails.forEach(trail => {
         const card = document.createElement("div");
         card.classList.add("trail-card");
 
@@ -54,19 +51,13 @@ if (trailContainer) {
     });
 }
 
-// Form Submission
-const contactForm = document.getElementById("contact-form");
+// Hamburger Menu Toggle
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
 
-if (contactForm) {
-    contactForm.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const formData = {
-            name: e.target.name.value,
-            email: e.target.email.value,
-            message: e.target.message.value,
-        };
-        localStorage.setItem("formSubmission", JSON.stringify(formData));
-        document.getElementById("form-confirmation").textContent = "Thank you for your message!";
+if (hamburger && navMenu) {
+    hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
     });
 }
 
