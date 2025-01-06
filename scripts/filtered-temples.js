@@ -5,35 +5,35 @@ const temples = [
         location: "Salt Lake City, Utah, USA",
         dedicationDate: "1893-04-06",
         area: 253000,
-        imageUrl: "images/section1.webp"
+        imageUrl: "/images/section1.webp",
     },
     {
         name: "Washington D.C. Temple",
         location: "Kensington, Maryland, USA",
         dedicationDate: "1974-11-19",
         area: 160000,
-        imageUrl: "images/section1.webp",
+        imageUrl: "/images/section1.webp",
     },
     {
         name: "São Paulo Brazil Temple",
         location: "São Paulo, Brazil",
         dedicationDate: "1978-10-30",
         area: 59000,
-        imageUrl: "images/section1.webp",
+        imageUrl: "/images/section1.webp",
     },
     {
         name: "Rome Italy Temple",
         location: "Rome, Italy",
         dedicationDate: "2019-03-10",
         area: 40000,
-        imageUrl: "images/section1.webp",
+        imageUrl: "/images/section1.webp",
     },
     {
         name: "Hong Kong China Temple",
         location: "Hong Kong, China",
         dedicationDate: "1996-05-26",
         area: 58000,
-        imageUrl: "images/section1.webp",
+        imageUrl: "/images/section1.webp",
     },
     // Add more temples here
 ];
