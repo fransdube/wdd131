@@ -16,21 +16,21 @@ const trails = [
         difficulty: "Easy",
         length: "5 km",
         highlights: "Waterfall, Wildlife",
-        image: "/images/trail2.webp"
+        image: "images/trail2.webp"
     },
     {
         name: "Trail B",
         difficulty: "Moderate",
         length: "10 km",
         highlights: "Viewpoint, Forest",
-        image: "/images/trail1.webp"
+        image: "images/trail1.webp"
     },
     {
         name: "Trail C",
         difficulty: "Hard",
         length: "15 km",
         highlights: "Mountain, River",
-        image: "/images/trail3.webp"
+        image: "images/trail3.webp"
     }
 ];
 
